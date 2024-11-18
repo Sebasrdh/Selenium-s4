@@ -9,6 +9,9 @@ Asegúrate de tener instalados los siguientes requisitos previos antes de descar
 1. **Java Development Kit (JDK)**: Asegúrate de tener la versión 23 o compatible instalada.
 2. **Gradle**: Aunque el proyecto incluye el wrapper de Gradle, es recomendable tener Gradle instalado globalmente.
 3. **Java IDE**: Se recomienda usar IntelliJ IDEA o Eclipse.
+4. **Código FrontEnd**: Se debe poseer el código correspondiente al Front de la Semana 3 Programa Eureka.
+5. **Código BackEnd**: Se debe poseer el código correspondiente al Back de la Semana 3 Programa Eureka.
+6. **MySQL**: Para correr la BBDD del proyecto.
 
 ## Pasos para Descargar y Ejecutar el Proyecto
 
@@ -24,14 +27,25 @@ Asegúrate de tener instalados los siguientes requisitos previos antes de descar
    ```bash
    ./gradlew clean build
    ```
+3. **Ejecutar el BackEnd de la S3**
+     Para ejecutar este código debemos irnos a la terminal de nuestro IDE de preferencia y ejecutar los siguientes comandos:
+      - npm install
+      - npm run dev
+  
+4. **Ejecutar el FrontEnd de la S3**
+      Para ejecutar este código debemos irnos a la terminal de nuestro IDE de preferencia y ejecutar los siguientes comandos:
+      - npm install
+      - npm run start
+  
+## Una vez ya iniciados los proyectos Front y Back + la BBDD MySQL comenzamos a ejecutar las pruebas.
 
-3. **Ejecutar las Pruebas**
+1. **Ejecutar las Pruebas**
    Para ejecutar las pruebas con JUnit, usa el siguiente comando:
    ```bash
    ./gradlew test
    ```
 
-4. **Generar Reportes con Allure**
+2. **Generar Reportes con Allure**
    Para generar y ver los reportes de Allure, usa el siguiente comando:
    ```bash
    ./gradlew allureServe
