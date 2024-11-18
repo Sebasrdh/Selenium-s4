@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -50,7 +51,7 @@ public class UserTest {
     }
 
     @Test
-    @DisplayName("Crear nuevo usuario")
+    @Description("Creación de nuevo usuario.")
     public void userspage() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -118,7 +119,7 @@ public class UserTest {
     }
 
     @Test
-    @DisplayName("Validar error al dejar campos en blanco")
+    @Description ("Validación de error al dejar textbox en blanco.")
     public void validateErrorOnEmptyFields() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -149,7 +150,7 @@ public class UserTest {
     }
 
     @Test
-    @DisplayName("Editar un usuario existentes")
+    @Description ("Edición de un usuario existente")
     public void editUser() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         // Seleccionar Mantenedores
@@ -190,7 +191,7 @@ public class UserTest {
     }
 
     @Test
-    @DisplayName("Eliminar un usuario")
+    @Description ("Eliminar usuario.")
     public void deleteUser() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         // Seleccionar Mantenedores

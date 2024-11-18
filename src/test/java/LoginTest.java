@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -26,6 +27,7 @@ public class LoginTest {
     }
 
     @Test
+    @Description("Inicio de sesión")
     public void iniciodeSesion() {
         // Se ingresa a la página web
         driver.get("http://localhost:4200/#/auth/login");

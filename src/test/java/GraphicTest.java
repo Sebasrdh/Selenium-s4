@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -40,6 +41,7 @@ public class GraphicTest {
     }
 
     @Test
+    @Description ("Validación del grafico y texto visible.")
     public void graficovisible() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 

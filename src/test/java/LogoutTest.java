@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -44,7 +45,7 @@ public class LogoutTest {
     }
 
     @Test
-    @DisplayName("Cerrar sesión y verificar que se muestra la pantalla de login")
+    @Description("Cierre de sesión y validación pantalla Login")
     public void testLogout() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
